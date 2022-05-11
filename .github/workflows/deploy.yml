@@ -24,7 +24,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: |
-            cd cd /home/ubuntu/repos/daw-express-v2
+            cd /home/ubuntu/repos/daw-express-v2
             git pull origin main
             docker-compose restart
             echo "ok"
